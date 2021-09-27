@@ -46,8 +46,9 @@ func main() {
 	app.Post("/signup", Signup)
 	app.Post("/login", Login)
 	app.Get("/hello", Hello)
+	app.Get("apix/hello", Hello)
 
-	app.Listen(":8000")
+	app.Listen(":3334")
 }
 
 func Signup(c *fiber.Ctx) error {
